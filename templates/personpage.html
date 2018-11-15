@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+</head>
+<body>
+    <h3>个人中心</h3>
+    <p>姓名：{{ user.username }}</p>
+    <p>密码：{{ user.password }}</p>
+    <p>邮箱：{{ user.email }}</p>
+    <a href="{{ url_for("delete_user",id=user.id) }}">删除</a>
+</body>
+</html>
